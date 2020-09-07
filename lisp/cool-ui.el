@@ -6,8 +6,8 @@
   :config
   (load-theme 'gruvbox-dark-hard t))
 
-;(use-package srcery-theme
-;  :ensure t)
+(use-package srcery-theme
+  :ensure t)
 
 (use-package hl-line
   :config
