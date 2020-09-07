@@ -13,7 +13,7 @@
 (setq package-archives
       '(
 	("melpa" . "http://melpa.org/packages/")
-        ("melpa-stable" . "http://stable.melpa.org/packages/")
+;;        ("melpa-stable" . "http://stable.melpa.org/packages/")
         ("gnu" . "http://elpa.gnu.org/packages/")
 	("org" . "http://orgmode.org/elpa/")))
 
@@ -23,6 +23,14 @@
   (message "Installl use-package.el")
   (package-refresh-contents)
   (package-install 'use-package))
+
+(use-package auto-package-update
+  :ensure t
+  :config
+  (setq auto-package-update-delete-old-versions t)
+  (setq auto-package-update-hide-results t)
+  (auto-package-update-now))
+  
 
 (setq inhibit-startup-screen t)
 
@@ -42,28 +50,9 @@
 (when (file-exists-p custom-file)
   (load-file custom-file))
 
-(use-package gruvbox-theme
-  :config
-  (load-theme 'gruvbox-dark-hard t))
-
-;(use-package srcery-theme
-;  :ensure t)
-
-
-(use-package smart-mode-line-atom-one-dark-theme
-  :ensure t)
-
-;; smart-mode-linne
-(use-package smart-mode-line
-;;  :ensure t
-;;  :defer 1
-;;  :functions (sml/setup)
-  :config
-  (setq sml/theme 'atom-one-dark)
-  (sml/setup))
-
 (require 'cool-core)
 (require 'cool-ui)
 (require 'cool-complete)
+(require 'cool-markdown)
 
 ;;; init.el ends here
