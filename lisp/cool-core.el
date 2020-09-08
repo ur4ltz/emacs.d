@@ -28,19 +28,5 @@
 	recentf-auto-cleanup 'never)
   (recentf-mode +1))
 
-(use-package evil
-  :ensure t
-  :init
-  (setq evil-want-integration t)
-  (setq evil-want-keybinding nil)
-  :config
-  (evil-mode 1))
-
-(use-package evil-collection
-  :after evil
-  :ensure t
-  :config
-  (evil-collection-init))
-
 (provide 'cool-core)
 ;;; cool-core.el ends here

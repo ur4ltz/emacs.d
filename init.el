@@ -51,8 +51,11 @@
   (load-file custom-file))
 
 (require 'cool-core)
+(require 'cool-magit)
+(require 'cool-evil)
 (require 'cool-ui)
 (require 'cool-complete)
 (require 'cool-markdown)
+(require 'cool-global-keybindings)
 
 ;;; init.el ends here

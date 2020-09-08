@@ -16,7 +16,7 @@
 ;;(use-package smart-mode-line-atom-one-dark-theme
 ;;  :ensure t)
 
-;; smart-mode-linne
+;;; smart-mode-linne
 ;;(use-package smart-mode-line
 ;;  :config
 ;;  (setq sml/theme 'atom-one-dark)
