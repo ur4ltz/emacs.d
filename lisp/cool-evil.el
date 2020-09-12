@@ -2,6 +2,9 @@
 
 ;;; Code:
 
+
+(setq evil-want-keybinding nil)
+
 (use-package evil
   :ensure t
   :init
@@ -15,7 +18,7 @@
     :config
     (require 'magit)
     (setq evil-magit-state 'normal)
-    (setq evil-magit-use-y-for-yank nil))  
+    (setq evil-magit-use-y-for-yank nil))
 
   (use-package evil-surround
     :ensure t

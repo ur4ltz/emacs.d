@@ -10,6 +10,7 @@
 (setenv "LANG" "ru_RU.UTF-8")
 (setenv "LC_CTYPE" "ru_RU.UTF-8")
 
+;; enable y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (use-package savehist

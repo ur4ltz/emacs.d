@@ -31,31 +31,19 @@
   (setq auto-package-update-hide-results t)
   (auto-package-update-now))
   
-
-(setq inhibit-startup-screen t)
-
-(line-number-mode t)
-(column-number-mode t)
-
-;; Номера строк
-(global-linum-mode t)
-;; Парные скобки
-(show-paren-mode t)
-
 (add-to-list 'load-path
 	     (expand-file-name "lisp" user-emacs-directory))
-
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load-file custom-file))
 
 (require 'cool-core)
+(require 'cool-ui)
+(require 'cool-global-keybindings)
 (require 'cool-magit)
 (require 'cool-evil)
-(require 'cool-ui)
 (require 'cool-complete)
 (require 'cool-markdown)
-(require 'cool-global-keybindings)
 
 ;;; init.el ends here

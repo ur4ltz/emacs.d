@@ -2,6 +2,19 @@
 
 ;;; Code:
 
+(setq inhibit-startup-screen t)
+
+(line-number-mode t)
+(column-number-mode t)
+
+;; Выключим tool-bar.
+(tool-bar-mode -1)
+
+;; Номера строк
+(global-linum-mode t)
+;; Парные скобки
+(show-paren-mode t)
+
 (use-package gruvbox-theme
   :config
   (load-theme 'gruvbox-dark-hard t))
@@ -12,6 +25,9 @@
 (use-package hl-line
   :config
   (global-hl-line-mode +1))
+
+(setq default-frame-alist
+      (add-to-list 'default-frame-alist '(font . "Anonymous Pro-8")))
 
 ;;(use-package smart-mode-line-atom-one-dark-theme
 ;;  :ensure t)
@@ -28,7 +44,10 @@
   (doom-modeline-mode t))
 
 (use-package rainbow-delimiters
-  :ensure t)
+  :ensure t
+  :config
+  (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
+  )
 
 (use-package rainbow-mode
   :ensure t
