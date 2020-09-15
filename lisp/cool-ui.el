@@ -63,6 +63,13 @@
 	  which-key-delay 0.3)
     (which-key-mode)))
 
+(use-package windmove
+  :bind
+  ("C-x <up>" . windmove-up)
+  ("C-x <down>" . windmove-down)
+  ("C-x <left>" . windmove-left)
+  ("C-x <right>" . windmove-right))
+
 (setq whitespace-style
       '(spaces tabs newline space-mark newline-mark))
 
