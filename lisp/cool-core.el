@@ -25,8 +25,9 @@
   :config
   (setq recentf-save-file (expand-file-name "recentf" user-emacs-directory)
 	recentf-max-saved-items 500
-	recentf-max-menu-items 20
-	recentf-auto-cleanup 'never)
+	recentf-max-menu-items 500
+	recentf-auto-cleanup 'never
+	recentf-exclude '("/tmp" "/ssh:" ".*-autoloads\\.el\\'"))
   (recentf-mode +1))
 
 (provide 'cool-core)
