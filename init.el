@@ -39,6 +39,7 @@
   (load-file custom-file))
 
 (require 'cool-core)
+(require 'cool-dashboard)
 (require 'cool-ui)
 (require 'cool-global-keybindings)
 (require 'cool-magit)
