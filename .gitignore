@@ -8,6 +8,8 @@ auto-save-list
 tramp
 .\#*
 
+temp/
+
 # Org-mode
 .org-id-locations
 *_archive
