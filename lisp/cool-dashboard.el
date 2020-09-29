@@ -2,7 +2,8 @@
 
 ;;; Code:
 
-(use-package all-the-icons)
+(use-package all-the-icons
+  :ensure t)
 
 (use-package dashboard
   :ensure t
