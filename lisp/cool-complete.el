@@ -17,8 +17,7 @@
   (setq company-dabbrev-ignore-case nil)
 
   (company-tng-configure-default)
-  (global-company-mode)
-  )
+  (global-company-mode))
 
 (use-package company-box
   :ensure t
@@ -80,9 +79,9 @@
 
 (use-package yasnippet
   :ensure t
-  :commands (yas-global-mode)
   :delight (yas-minor-mode  "Ⓨ")
-  )
+  :config
+  (yas-global-mode 1))
 
 (use-package yasnippet-snippets
   :ensure t
