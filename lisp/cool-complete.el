@@ -68,8 +68,10 @@
   :ensure t
   :after company
   :commands company-quickhelp-mode
-;;  :init (csetq company-quickhelp-use-propertized-text t)
-  :config (company-quickhelp-mode))
+  :init
+  (setq company-quickhelp-use-propertized-text t)
+  :config
+  (company-quickhelp-mode))
 
 (use-package company-statistics
   :ensure t
