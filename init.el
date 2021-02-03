@@ -42,9 +42,11 @@
 (require 'cool-dashboard)
 (require 'cool-ui)
 (require 'cool-global-keybindings)
+(require 'cool-projectile)
 (require 'cool-magit)
 (require 'cool-evil)
 (require 'cool-complete)
+;; Language.
 (require 'cool-markdown)
 
 ;;; init.el ends here
