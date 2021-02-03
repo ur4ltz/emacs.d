@@ -25,10 +25,17 @@
   :config
   (setq recentf-save-file (expand-file-name "recentf" user-emacs-directory)
 	recentf-max-saved-items 500
-	recentf-max-menu-items 500
+	recentf-max-menu-items 20
 	recentf-auto-cleanup 'never
 	recentf-exclude '("/tmp" "/ssh:" ".*-autoloads\\.el\\'"))
   (recentf-mode +1))
+
+(use-package undo-tree
+  :ensure t
+  :config
+  (setq undo-tree-auto-save-history t)
+  (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
+  (global-undo-tree-mode))
 
 (provide 'cool-core)
 ;;; cool-core.el ends here
