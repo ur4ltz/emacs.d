@@ -15,20 +15,27 @@
 ;; Парные скобки
 (show-paren-mode t)
 
-(use-package gruvbox-theme
-  :ensure t
-  :config
-  (load-theme 'gruvbox-dark-hard t))
+;;(use-package gruvbox-theme
+;;  :ensure t
+;;  :config
+;;  (load-theme 'gruvbox-dark-hard t))
 
 (use-package srcery-theme
   :ensure t)
+
+(use-package doom-themes
+  :ensure t
+  :config
+  (setq doom-themes-enable-bold t
+	doom-themes-enable-italic t)
+  (load-theme 'doom-gruvbox t))
 
 (use-package hl-line
   :config
   (global-hl-line-mode +1))
 
 (setq default-frame-alist
-      (add-to-list 'default-frame-alist '(font . "Anonymous Pro-8")))
+      (add-to-list 'default-frame-alist '(font . "Anonymous Pro-10")))
 
 ;;(use-package smart-mode-line-atom-one-dark-theme
 ;;  :ensure t)
@@ -41,8 +48,17 @@
 
 (use-package doom-modeline
   :ensure t
-  :init
-  (doom-modeline-mode t))
+  :hook (after-init . doom-modeline-mode)
+  :config
+  (setq doom-modeline-icon nil))
+
+(use-package winum
+  :ensure t
+  :config
+  (setq winum-auto-assign-0-to-minibuffer nil
+	winum-auto-setup-mode-line nil
+	winum-ignored-buffers '(" *which-key*"))
+  (winum-mode))
 
 (use-package rainbow-delimiters
   :ensure t
