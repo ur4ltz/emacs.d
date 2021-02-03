@@ -46,6 +46,7 @@
 (require 'cool-magit)
 (require 'cool-evil)
 (require 'cool-complete)
+(require 'cool-flycheck)
 ;; Language.
 (require 'cool-markdown)
 
