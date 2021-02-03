@@ -47,6 +47,7 @@
 (require 'cool-evil)
 (require 'cool-complete)
 (require 'cool-flycheck)
+(require 'cool-lsp)
 ;; Language.
 (require 'cool-markdown)
 
