@@ -9,6 +9,11 @@ tramp
 .\#*
 
 temp/
+/custom.el
+/recentf
+/savehist
+/.last-package-update-day
+/transient/
 
 # Org-mode
 .org-id-locations
@@ -42,10 +47,15 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+/projectile.cache
+/projectile-bookmarks.eld
 
 # directory configuration
 .dir-locals.el
 
 # network security
 /network-security.data
+
+# Company files
+company-statistics-cache.el
 
