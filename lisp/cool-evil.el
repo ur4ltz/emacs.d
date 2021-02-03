@@ -19,13 +19,6 @@
   :config
   (evil-mode 1))
 
-(use-package evil-magit
-  :ensure t
-  :config
-  (require 'magit)
-  (setq evil-magit-state 'normal)
-  (setq evil-magit-use-y-for-yank nil))
-
 (use-package evil-surround
   :ensure t
   :config
