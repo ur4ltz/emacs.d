@@ -57,5 +57,6 @@
 (require 'cool-telega)
 ;; Language.
 (require 'cool-markdown)
+(require 'cool-lua)
 
 ;;; init.el ends here
