@@ -1,7 +1,5 @@
 ;;; init.el ---
 ;;
-;;
-;;
 
 ;;; Commentary:
 ;; 
@@ -9,20 +7,27 @@
 ;;; Code:
 (if (version< emacs-version "27")
     (package-initialize))
+
 (require 'package)
+
 (setq package-archives
       '(
-	("melpa" . "http://melpa.org/packages/")
-;;        ("melpa-stable" . "http://stable.melpa.org/packages/")
         ("gnu" . "http://elpa.gnu.org/packages/")
-	("org" . "http://orgmode.org/elpa/")))
+        ("melpa" . "http://melpa.org/packages/")
+        ("melpa-stable" . "http://stable.melpa.org/packages/")
+        ("org" . "http://orgmode.org/elpa/")))
 
-(setq package-enable-at-startup nil)
-
+;; Use 'use-package' to manage packages
 (unless (package-installed-p 'use-package)
   (message "Installl use-package.el")
   (package-refresh-contents)
   (package-install 'use-package))
+
+(use-package use-package
+  :config
+  (setq use-package-always-ensure t
+	use-package-always-demand t
+	use-package-always-pin "melpa"))
 
 (use-package auto-package-update
   :ensure t
@@ -48,6 +53,8 @@
 (require 'cool-complete)
 (require 'cool-flycheck)
 (require 'cool-lsp)
+;;
+(require 'cool-telega)
 ;; Language.
 (require 'cool-markdown)
 
