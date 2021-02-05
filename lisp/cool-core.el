@@ -15,7 +15,7 @@
 
 (use-package savehist
   :config
-  (setq savehist-addifional-variables
+  (setq savehist-additional-variables
 	'(search-ring regexp-search-ring)
 	savehist-autosave-interval 60
 	savehist-file (expand-file-name "savehist" user-emacs-directory))
@@ -25,7 +25,7 @@
   :config
   (setq recentf-save-file (expand-file-name "recentf" user-emacs-directory)
 	recentf-max-saved-items 500
-	recentf-max-menu-items 20
+	recentf-max-menu-items 30
 	recentf-auto-cleanup 'never
 	recentf-exclude '("/tmp" "/ssh:" ".*-autoloads\\.el\\'"))
   (recentf-mode +1))
