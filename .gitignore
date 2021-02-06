@@ -17,6 +17,8 @@ temp/
 
 /TAGS
 
+/.cache/
+
 # Org-mode
 .org-id-locations
 *_archive
