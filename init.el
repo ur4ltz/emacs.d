@@ -8,6 +8,9 @@
 (if (version< emacs-version "27")
     (package-initialize))
 
+(setq user-full-name "Andy Shevchenko")
+(setq user-mail-address "ur4ltz@gmail.com")
+
 (require 'package)
 
 (setq package-archives
@@ -26,8 +29,7 @@
 (use-package use-package
   :config
   (setq use-package-always-ensure t
-	use-package-always-demand t
-	use-package-always-pin "melpa"))
+        use-package-always-demand t))
 
 (use-package auto-package-update
   :ensure t
@@ -35,7 +37,7 @@
   (setq auto-package-update-delete-old-versions t)
   (setq auto-package-update-hide-results t)
   (auto-package-update-now))
-  
+
 (add-to-list 'load-path
 	     (expand-file-name "lisp" user-emacs-directory))
 
@@ -46,6 +48,7 @@
 (require 'cool-core)
 (require 'cool-dashboard)
 (require 'cool-ui)
+(require 'cool-treemacs)
 (require 'cool-global-keybindings)
 (require 'cool-projectile)
 (require 'cool-magit)
