@@ -47,12 +47,6 @@
 ;;  (setq sml/theme 'atom-one-dark)
 ;;  (sml/setup))
 
-(use-package doom-modeline
-  :ensure t
-  :hook (after-init . doom-modeline-mode)
-  :config
-  (setq doom-modeline-icon nil))
-
 (use-package rainbow-delimiters
   :ensure t
   :config
@@ -70,7 +64,7 @@
   :config
   (progn
     (setq which-key-idle-secondary-delay 0.1
-	  which-key-delay 0.3)
+	  which-key-idle-delay 0.3)
     (which-key-mode)))
 
 (use-package windmove
