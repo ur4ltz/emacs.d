@@ -1,5 +1,6 @@
-;;;
+;;;; cool-ui.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
 
 (setq inhibit-startup-screen t)
@@ -35,7 +36,7 @@
   (global-hl-line-mode +1))
 
 (setq default-frame-alist
-      (add-to-list 'default-frame-alist '(font . "Anonymous Pro-10")))
+      (add-to-list 'default-frame-alist '(font . "Anonymous Pro-9")))
 
 ;;(use-package smart-mode-line-atom-one-dark-theme
 ;;  :ensure t)
@@ -51,14 +52,6 @@
   :hook (after-init . doom-modeline-mode)
   :config
   (setq doom-modeline-icon nil))
-
-(use-package winum
-  :ensure t
-  :config
-  (setq winum-auto-assign-0-to-minibuffer nil
-	winum-auto-setup-mode-line nil
-	winum-ignored-buffers '(" *which-key*"))
-  (winum-mode))
 
 (use-package rainbow-delimiters
   :ensure t

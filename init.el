@@ -1,10 +1,8 @@
-;;; init.el ---
-;;
+;;; init.el --- summary -*- lexical-binding: t -*-
 
 ;;; Commentary:
-;; 
-
 ;;; Code:
+
 (if (version< emacs-version "27")
     (package-initialize))
 
@@ -48,6 +46,7 @@
 (require 'cool-core)
 (require 'cool-dashboard)
 (require 'cool-ui)
+(require 'cool-winum)
 (require 'cool-treemacs)
 (require 'cool-global-keybindings)
 (require 'cool-projectile)

@@ -1,5 +1,6 @@
-;;;
+;;; cool-core.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
 
 ;; UTF-8 as default encoding
