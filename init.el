@@ -56,6 +56,7 @@
 (require 'cool-complete)
 (require 'cool-flycheck)
 (require 'cool-lsp)
+(require 'cool-vterm)
 ;;
 (require 'cool-telega)
 ;; Language.
