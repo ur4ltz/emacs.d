@@ -33,10 +33,14 @@
 
 (use-package undo-tree
   :ensure t
+  :diminish undo-tree-mode
   :config
-  (setq undo-tree-auto-save-history t)
-  (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
-  (global-undo-tree-mode))
-
+  (progn
+    (global-undo-tree-mode)
+    (setq undo-tree-visualizer-timestamps t)
+    (setq undo-tree-visualizer-diff t)
+    (setq undo-tree-auto-save-history t)
+    (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/.cache/undo")))))
+  
 (provide 'cool-core)
 ;;; cool-core.el ends here
