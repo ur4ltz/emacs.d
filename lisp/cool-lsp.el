@@ -1,6 +1,7 @@
-;;; lisp/cool-lsp.el -*- lexical-binding: t -*-
+;;; cool-lsp.el -*- lexical-binding: t -*-
 
 ;;; Code:
+
 (use-package lsp-mode
   :ensure t
   :init
@@ -16,7 +17,7 @@
 (use-package lsp-treemacs
   :ensure t
   :commands lsp-treemacs-error-list)
-  
-  
+
 (provide 'cool-lsp)
+
 ;;; cool-lsp.el ends here
