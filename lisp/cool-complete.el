@@ -60,7 +60,7 @@
           (TypeParameter . ,(all-the-icons-material "class"                    :face 'all-the-icons-red))
           (Template      . ,(all-the-icons-material "short_text"               :face 'all-the-icons-green))))
 
-  ;; Add space after the icon
+  ;; Add a space after the icon
   (dolist (elt company-box-icons-all-the-icons)
     (setcdr elt (concat (cdr elt) " "))))
 
