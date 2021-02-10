@@ -28,7 +28,7 @@
   :ensure t
   :config
   (setq doom-themes-enable-bold t
-	doom-themes-enable-italic t)
+	    doom-themes-enable-italic t)
   (load-theme 'doom-gruvbox t))
 
 (use-package hl-line
@@ -64,7 +64,7 @@
   :config
   (progn
     (setq which-key-idle-secondary-delay 0.1
-	  which-key-idle-delay 0.3)
+	      which-key-idle-delay 0.3)
     (which-key-mode)))
 
 (use-package windmove

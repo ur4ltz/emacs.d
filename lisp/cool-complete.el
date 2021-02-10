@@ -6,16 +6,14 @@
   :ensure t
   :delight "Ⓐ"
   :init
-  :config
   (setq company-idle-delay 0.2)
   (setq company-minimum-prefix-length 1)
   (setq company-show-numbers t)
   (setq company-tooltip-limit 20)
-
   (setq company-tooltip-align-annotations t)
   (setq company-require-match nil)
   (setq company-dabbrev-ignore-case nil)
-
+  :config
   (company-tng-configure-default)
   (global-company-mode))
 
