@@ -1,5 +1,6 @@
-;;;
+;;; cool-complete.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
 
 (use-package company
@@ -14,7 +15,7 @@
   (setq company-require-match nil)
   (setq company-dabbrev-ignore-case nil)
   :config
-  (company-tng-configure-default)
+  (company-tng-mode)
   (global-company-mode))
 
 (use-package company-box
@@ -88,4 +89,5 @@
   :after yasnippet)
 
 (provide 'cool-complete)
+
 ;;; cool-complete.el ends here

@@ -1,5 +1,6 @@
-;;; cool-lua.el ---
+;;; cool-lua.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
 
 (use-package lua-mode
