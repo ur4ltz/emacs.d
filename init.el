@@ -47,6 +47,8 @@
 (require 'cool-dashboard)
 (require 'cool-ui)
 (require 'cool-modeline)
+;;(require 'cool-selectrum)
+(require 'cool-ivy)
 (require 'cool-winum)
 (require 'cool-treemacs)
 (require 'cool-global-keybindings)
