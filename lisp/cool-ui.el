@@ -27,8 +27,8 @@
 (use-package doom-themes
   :ensure t
   :config
-  (setq doom-themes-enable-bold t
-	    doom-themes-enable-italic t)
+  (setq doom-themes-enable-bold   t
+        doom-themes-enable-italic t)
   (load-theme 'doom-gruvbox t))
 
 (use-package hl-line
@@ -50,13 +50,29 @@
 (use-package rainbow-delimiters
   :ensure t
   :config
-  (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
-  )
+  (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode))
 
 (use-package rainbow-mode
   :ensure t
   :config
   (add-hook 'prog-mode-hook #'rainbow-mode))
+
+(use-package whitespace
+  :init
+  (dolist (hook '(prog-mode-hook text-mode-hook))
+    (add-hook hook #'whitespace-mode))
+  (add-hook 'before-save-hook #'whitespace-cleanup)
+  (setq whitespace-line-column 80)
+  (setq whitespace-style
+        '(spaces tabs newline space-mark newline-mark)))
+
+(use-package aggressive-indent
+  :hook
+  (prog-mode-hook . aggressive-indent-mod)
+  :config
+  (setq-default aggressive-indent-comments-too t
+                aggressive-indent-sit-for-time 0.5)
+  (global-aggressive-indent-mode 1))
 
 (use-package which-key
   :ensure t
@@ -64,7 +80,7 @@
   :config
   (progn
     (setq which-key-idle-secondary-delay 0.1
-	      which-key-idle-delay 0.3)
+          which-key-idle-delay           0.3)
     (which-key-mode)))
 
 (use-package windmove
@@ -73,9 +89,6 @@
   ("C-x <down>" . windmove-down)
   ("C-x <left>" . windmove-left)
   ("C-x <right>" . windmove-right))
-
-(setq whitespace-style
-      '(spaces tabs newline space-mark newline-mark))
 
 (provide 'cool-ui)
 ;;; cool-ui.el ends here
