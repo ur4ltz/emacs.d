@@ -1,5 +1,6 @@
-;;;
+;;; cool-magit.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
 
 ;; Emacs Git integration
@@ -7,8 +8,8 @@
   :ensure t
   :config
   (add-hook 'magit-mode-hook
-	    (lambda ()
-	      (define-key magit-mode-map (kbd ",o") 'delete-other-windows))))
+            (lambda ()
+              (define-key magit-mode-map (kbd ",o") 'delete-other-windows))))
 
 (use-package diff-hl
   :ensure t
@@ -18,4 +19,5 @@
   (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh))
 
 (provide 'cool-magit)
+
 ;;; cool-magit.el ends here

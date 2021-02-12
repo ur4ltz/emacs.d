@@ -1,5 +1,6 @@
-;;;
+;;; cool-global-keybindings.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
 
 ;; Font size
@@ -13,4 +14,5 @@
 (global-set-key (kbd "C-x M-g") 'magit-dispatch)
 
 (provide 'cool-global-keybindings)
-;;; cool-.el ends here
+
+;;; cool-global-keybindings.el ends here
