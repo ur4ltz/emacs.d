@@ -11,6 +11,9 @@
             (lambda ()
               (define-key magit-mode-map (kbd ",o") 'delete-other-windows))))
 
+(use-package vdiff
+  :ensure t)
+
 (use-package diff-hl
   :ensure t
   :config
