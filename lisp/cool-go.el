@@ -3,7 +3,10 @@
 ;;; Commentary:
 ;;; Code:
 (use-package go-mode
-  :ensure t)
+  :ensure t
+  :hook
+  (go-mode . lsp-deferred)
+  )
 
 
 (provide 'cool-go)
