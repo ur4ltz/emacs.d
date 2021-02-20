@@ -64,5 +64,6 @@
 ;; Language.
 (require 'cool-markdown)
 (require 'cool-lua)
+(require 'cool-lisp)
 
 ;;; init.el ends here
