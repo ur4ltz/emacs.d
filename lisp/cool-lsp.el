@@ -9,7 +9,7 @@
   (setq lsp-keymap-prefix "C-c l")
   :hook (
          (lsp-mode . lsp-enable-which-key-integration))
-  :commands lsp-mode)
+  :commands lsp)
 
 (use-package lsp-ui
   :ensure t

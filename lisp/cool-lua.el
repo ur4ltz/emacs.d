@@ -8,7 +8,7 @@
   :mode
   ("\\.lua\\'")
   :hook
-  (lua-mode . lsp-deferred)
+  (lua-mode . lsp)
   :interpreter "lua"
   :config
   (setq lua-indent-level                 4
@@ -16,4 +16,5 @@
         lua-prefix-key                   nil))
 
 (provide 'cool-lua)
+
 ;;; cool-lua.el ends here
