@@ -1,6 +1,8 @@
-;;; cool-flycheck.el ---
+;;; cool-flycheck.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
+
 (use-package flycheck
   :ensure t
   :init
