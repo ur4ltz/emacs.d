@@ -17,7 +17,8 @@ temp/
 
 /TAGS
 
-/.cache/
+.cache/
+.lsp-session*
 
 # Org-mode
 .org-id-locations
