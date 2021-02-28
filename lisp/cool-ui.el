@@ -16,20 +16,20 @@
 ;; Парные скобки
 (show-paren-mode t)
 
-;;(use-package gruvbox-theme
-;;  :ensure t
-;;  :config
-;;  (load-theme 'gruvbox-dark-hard t))
+(use-package gruvbox-theme
+  :ensure t
+  :config
+  (load-theme 'gruvbox-dark-hard t))
 
 (use-package srcery-theme
   :ensure t)
 
-(use-package doom-themes
-  :ensure t
-  :config
-  (setq doom-themes-enable-bold   t
-        doom-themes-enable-italic t)
-  (load-theme 'doom-gruvbox t))
+;;(use-package doom-themes
+;;  :ensure t
+;;  :config
+;;  (setq doom-themes-enable-bold   t
+;;        doom-themes-enable-italic t)
+;;  (load-theme 'doom-gruvbox t))
 
 (use-package hl-line
   :config
