@@ -6,9 +6,6 @@
 (if (version< emacs-version "27")
     (package-initialize))
 
-(setq user-full-name "Andy Shevchenko")
-(setq user-mail-address "ur4ltz@gmail.com")
-
 (require 'package)
 
 (setq package-archives
@@ -37,7 +34,7 @@
   (auto-package-update-now))
 
 (add-to-list 'load-path
-	     (expand-file-name "lisp" user-emacs-directory))
+             (expand-file-name "lisp" user-emacs-directory))
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
@@ -61,6 +58,8 @@
 (require 'cool-vterm)
 ;;
 (require 'cool-telega)
+;;
+(require 'cool-org)
 ;; Language.
 (require 'cool-markdown)
 (require 'cool-lua)
