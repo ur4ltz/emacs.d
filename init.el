@@ -6,9 +6,6 @@
 (if (version< emacs-version "27")
     (package-initialize))
 
-(setq user-full-name "Andy Shevchenko")
-(setq user-mail-address "ur4ltz@gmail.com")
-
 (require 'package)
 
 (setq package-archives
@@ -36,8 +33,13 @@
   (setq auto-package-update-hide-results t)
   (auto-package-update-now))
 
+;; Personal information
+(setq personal-file (expand-file-name "personal.el" user-emacs-directory))
+(when (file-exists-p personal-file)
+  (load-file personal-file))
+
 (add-to-list 'load-path
-	     (expand-file-name "lisp" user-emacs-directory))
+             (expand-file-name "lisp" user-emacs-directory))
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
