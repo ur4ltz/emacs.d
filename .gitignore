@@ -8,7 +8,7 @@ auto-save-list
 tramp
 .\#*
 
-/etc/
+# /etc/
 /var/
 
 temp/
