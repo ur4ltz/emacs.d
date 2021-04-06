@@ -17,7 +17,6 @@
 
 ;; Use 'use-package' to manage packages
 (unless (package-installed-p 'use-package)
-  (message "Installl use-package.el")
   (package-refresh-contents)
   (package-install 'use-package))
 
@@ -27,7 +26,6 @@
         use-package-always-demand t))
 
 (use-package auto-package-update
-  :ensure t
   :config
   (setq auto-package-update-delete-old-versions t)
   (setq auto-package-update-hide-results t)
