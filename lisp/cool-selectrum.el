@@ -8,6 +8,10 @@
   :config
   (selectrum-mode +1))
 
+(use-package ctrlf
+  :config
+  (ctrlf-mode +1))
+
 (use-package prescient
   :config
   (prescient-persist-mode +1)
