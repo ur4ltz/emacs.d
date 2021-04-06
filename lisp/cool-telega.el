@@ -1,5 +1,6 @@
-;;; cool-telega.el ---
+;;; cool-telega.el --- summary -*- lexical-binding: t -*-
 
+;;; Commentary:
 ;;; Code:
 
 (use-package alert
