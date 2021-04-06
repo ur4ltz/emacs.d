@@ -36,7 +36,7 @@
   (global-hl-line-mode +1))
 
 (setq default-frame-alist
-      (add-to-list 'default-frame-alist '(font . "Anonymous Pro-9")))
+      (add-to-list 'default-frame-alist '(font . "Anonymous Pro-10")))
 
 ;;(use-package smart-mode-line-atom-one-dark-theme
 ;;  :ensure t)
