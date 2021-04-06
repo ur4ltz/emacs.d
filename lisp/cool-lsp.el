@@ -11,7 +11,11 @@
   ((go-mode  . lsp-deferred)
    (lua-mode . lsp-deferred)
    (lsp-mode . lsp-enable-which-key-integration))
-  :commands lsp-mode)
+  :commands lsp
+  :config
+  ;;(setq lsp-prefer-capf t)
+  (setq lsp-completion-provider t
+        lsp-idle-delay 0.500))
 
 (use-package lsp-ui
   :ensure t
