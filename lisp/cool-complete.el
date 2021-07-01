@@ -7,7 +7,7 @@
   :ensure t
   :delight "Ⓐ"
   :init
-  (setq company-idle-delay 0.2)
+  (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 1)
   (setq company-show-numbers t)
   (setq company-tooltip-limit 20)
@@ -15,6 +15,7 @@
   (setq company-require-match nil)
   (setq company-dabbrev-ignore-case nil)
   :config
+  (add-to-list 'company-backends 'company-capf)
   (company-tng-mode)
   (global-company-mode))
 

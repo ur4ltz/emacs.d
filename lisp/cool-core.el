@@ -40,7 +40,7 @@
   :hook (after-init . recentf-mode)
   :init
   (setq recentf-max-saved-items 500
-        recentf-max-menu-items 30
+        recentf-max-menu-items 35
         recentf-auto-cleanup 'never
         recentf-exclude '("\\.?cache"
                           "^/var/folders\\.*"

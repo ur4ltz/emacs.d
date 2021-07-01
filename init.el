@@ -65,6 +65,6 @@
 (require 'cool-markdown)
 (require 'cool-lua)
 (require 'cool-go)
-(require 'cool-lisp)
+;;(require 'cool-lisp)
 
 ;;; init.el ends here
